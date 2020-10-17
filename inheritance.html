@@ -1,0 +1,37 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <style>
+        /* li{
+            color:green;}
+        h1{
+            color:red;} */
+/* html에 color을 주면 html을 포함해서 그 밑의 태그까지 바뀜
+이렇게 다 바꾸려면 자식보다는 부모에 color을 입히는 것이 더
+효율적이다. 그리고 자식 태그에 따른 color를 주고 싶으면 따로
+입히면 된다 */
+        html{color:green;}
+        #rove{
+            color:red;
+        }
+/* css에서는 모든 속성이 상속되는 것이 아니다
+border은 상속되지 않고 color는 상속이 된다 */
+        body{
+            border:1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>한국어</h1>
+    <ul>
+        <li id="rove">Love = 사랑해(SaRangHae)</li>
+        <li>like = 좋아해(Joahae)</li>
+        <li>together = 같이(Gachi)</li>
+    </ul>
+    <h3><a href="http://www.w3.org/TR/CSS21/propidx.html">CSS에서 상속이 되는지 확인</a></h3>
+</body>
+</html>
