@@ -1,0 +1,43 @@
+<!-- I watched the html YouTube video of 생활코딩 and wrote the code. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+
+<!-- 웹브라우저 < 사용자 < 저자 -->
+    <style>
+/* id, class, style(attribute)을 li tag에 동시에 넣어 다른 
+색깔을 집어 넣으면 웹브라우저는 style의 손을 들어준다
+즉 style > id > class > tag cascading 규칙*/
+/* 왜? 이런 규칙을 가지게 되었나? 어떤게 더 정교하나에 따라이다
+tag는 정말 포괄적이다 tag를 하나 지정해버리면 그 tag에 관한
+전체가 바뀌니 말이다. class는 tag보다 더 정교하다. 지정하기
+때문이다. 허나 id보다는 아니다. 왜냐하면 id니 하나 밖에 가질
+수 없기 때문에 class보다 더 정교하기 때문이다. */
+/* 모든 순위를 무시하는 방법이 있다. !important이다. */
+/* !important를 쓰는게 좋은 것은 아니다.
+우선순위가 괜히 있는게 아니기 때문이다.
+코드리뷰하고 있는데 얘가 딱 보이면 전체기분이 다운될거 같다. */
+        li{
+            color:red !important;
+        }
+        #idsel{
+            color:orange;
+        }
+        .classsel{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li id="idsel" class="classsel"
+        style="color:blue">style attriute</li>
+        <li>id selector</li>
+        <li>class selector</li>
+        <li>tag selector</li>
+    </ol>
+</body>
+</html>
